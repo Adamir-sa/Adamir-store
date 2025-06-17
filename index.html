@@ -3,54 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ADAMIR - عطر الفخامة</title>
+  <title>ADAMIR - عطر فاخر</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Tajawal', sans-serif; background: #111; color: #fff; margin: 0; padding: 0; }
-    .container { max-width: 1200px; margin: auto; padding: 20px; }
-    header { text-align: center; padding: 50px 20px; background-color: #1c1c1c; }
-    header h1 { font-size: 48px; color: #d4af37; }
-    header p { font-size: 20px; color: #aaa; }
-    .product-img { width: 100%; max-width: 500px; border-radius: 20px; margin: 40px auto; display: block; }
-    .price-box { background: #222; padding: 30px; border-radius: 15px; text-align: center; margin: 30px 0; }
-    .price-box h2 { color: #d4af37; font-size: 32px; }
-    .price-box p { font-size: 18px; color: #ccc; margin-bottom: 20px; }
-    .btn-buy { background: #d4af37; color: #000; padding: 15px 30px; font-size: 18px; border: none; border-radius: 10px; cursor: pointer; }
-    footer { text-align: center; color: #888; padding: 20px; background: #1a1a1a; font-size: 14px; }
-    a { text-decoration: none; }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+    .product-image {
+      width: 100%;
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 20px 0 10px;
+    }
+    .price {
+      color: #a67c52;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    .description {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .button {
+      display: inline-block;
+      background-color: #000;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .button:hover {
+      background-color: #333;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>ADAMIR</h1>
-    <p>عطر فاخر - الجاذبية في جوهرها</p>
-  </header>
-
   <div class="container">
-    <img class="product-img" src="images/adamir-bottle.jpg" alt="زجاجة عطر ADAMIR">
-
-    <div class="price-box">
-      <h2>249 ريال</h2>
-      <p>توصيل سريع لجميع مدن المملكة - الدفع عند الاستلام</p>
-      <a href="https://wa.me/966504762787?text=أرغب_بطلب_عطر_ADAMIR" target="_blank">
-        <button class="btn-buy">اطلب الآن عبر واتساب</button>
-      </a>
+    <img class="product-image" src="images/admir-perfume.jpg" alt="عطر ADAMIR">
+    <h1>ADAMIR Eau de Parfum</h1>
+    <div class="price">399 ر.س</div>
+    <div class="description">
+      عطر فاخر مستوحى من الجاذبية ، يتميز بتركيبة راقية تمزج بين الفخامة والأصالة.<br>
+      صنع بكل فخر في المملكة العربية السعودية.
     </div>
-
-    <section>
-      <h2 style="color:#d4af37;">تفاصيل العطر</h2>
-      <ul style="line-height: 2; font-size: 16px; color: #ccc;">
-        <li>النوع: Eau de Parfum</li>
-        <li>الحجم: 100 مل</li>
-        <li>بلد الإنتاج: السعودية</li>
-        <li>روائح عليا: بخور، زعفران، عنبر</li>
-        <li>روائح قلبية: خشب العود، الجلد، فانيليا سوداء</li>
-        <li>روائح قاعدة: مسك أبيض، نجيل هندي، باتشولي</li>
-      </ul>
-    </section>
+    <a href="#" class="button">اطلب الآن</a>
   </div>
-
-  <footer>
-    &copy; 2025 متجر ADAMIR للعطور - جميع الحقوق محفوظة
-  </footer>
 </body>
 </html>
