@@ -2,65 +2,91 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ADAMIR - عطرنا، هويتنا</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Tajawal', sans-serif;
+      background-color: #f9f6f2;
       margin: 0;
       padding: 0;
-      background-color: #f7f1e9;
       color: #333;
     }
+
     header {
       background-color: #000;
       color: white;
       text-align: center;
-      padding: 2rem 1rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1rem;
-      color: #ccc;
-    }
-    .container {
       padding: 2rem 1rem;
-      text-align: center;
     }
-    .container img {
-      max-width: 300px;
-      width: 100%;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .product {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .product img {
+      width: 280px;
       border-radius: 1rem;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .price {
+      color: #a67c52;
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .description {
+      max-width: 600px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 2;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: #000;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h3 {
+      color: #000;
+      font-size: 1.3rem;
       margin-bottom: 1rem;
     }
-    .price {
-      color: #a8774a;
-      font-size: 1.5rem;
+
+    .features div,
+    .trust div,
+    .testimonials p,
+    .coming p {
+      background: #fff;
       margin: 0.5rem 0;
-    }
-    .description {
-      font-size: 1rem;
-      line-height: 2;
-      max-width: 600px;
-      margin: 1rem auto;
-    }
-    .button {
-      display: inline-block;
-      background-color: #000;
-      color: #fff;
-      padding: 1rem 2rem;
-      font-size: 1rem;
+      padding: 1rem;
       border-radius: 8px;
-      text-decoration: none;
-      margin-top: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
-    .button:hover {
-      background-color: #333;
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -68,19 +94,50 @@
 
   <header>
     <h1>ADAMIR - عطرنا، هويتنا</h1>
-    <p>صُنع في السعودية بروح الفخامة</p>
+    <p>صنع في السعودية بروح الفخامة</p>
   </header>
 
-  <div class="container">
+  <div class="product">
     <img src="admir-perfume.png" alt="ADAMIR Perfume" />
     <h2>ADAMIR Eau de Parfum</h2>
     <p class="price">٣٩٩ ر.س</p>
     <p class="description">
       عطر فاخر يتميز بنفحات عليا من البرغموت والزعفران، يليها قلب زهري من الورد الدمشقي والياسمين، وتنتهي بقاعدة غنية من العود والعنبر وخشب الصندل.
-      تركيبة راقية ومثالية لعشاق الفخامة، مصنوعة بعناية في المملكة العربية السعودية.
     </p>
-    <a href="https://wa.me/966504762787" class="button">اطلب الآن عبر واتساب</a>
+    <a href="https://wa.me/966504762787" class="cta">اطلب الآن عبر واتساب</a>
   </div>
+
+  <section class="features">
+    <h3>لماذا تختار ADAMIR؟</h3>
+    <div>👑 تركيبة ملكية بثبات طويل</div>
+    <div>🌿 مكونات طبيعية مختارة بعناية</div>
+    <div>🇸🇦 صناعة سعودية بكل فخر</div>
+  </section>
+
+  <section class="trust">
+    <h3>نعدك بـ</h3>
+    <div>🚚 شحن سريع</div>
+    <div>💳 دفع آمن</div>
+    <div>💬 دعم فني مباشر</div>
+    <div>🔄 ضمان استرجاع خلال 7 أيام</div>
+  </section>
+
+  <section class="testimonials">
+    <h3>قالوا عنا ❤️</h3>
+    <p>"رائحة فخمة، كل من شمي سألني عن العطر!" – عميل من جدة</p>
+    <p>"أفضل تجربة عطر خليجي راقٍ" – عميلة من الرياض</p>
+  </section>
+
+  <section class="coming">
+    <h3>قريباً ✨</h3>
+    <p>عطر خاص للسهرات</p>
+    <p>🚗 نسخة سيارة فاخرة</p>
+    <p>👑 نسخة ملكية لكبار الشخصيات</p>
+  </section>
+
+  <footer>
+    &copy; 2025 ADAMIR. جميع الحقوق محفوظة.
+  </footer>
 
 </body>
 </html>
