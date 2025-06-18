@@ -1,67 +1,113 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ADAMIR - عطر فاخر</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADAMIR - عطر الفخامة</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Cairo', sans-serif;
-      background-color: #f5f5f5;
       margin: 0;
-      padding: 0;
+      background: #f6f2ec;
+      color: #2d2d2d;
     }
-    .container {
-      max-width: 800px;
-      margin: 30px auto;
-      background: #fff;
+    header {
+      background: #000;
+      color: white;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 12px;
+      text-align: center;
     }
-    .product-image {
-      width: 100%;
-      border-radius: 8px;
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
     }
-    h1 {
-      font-size: 28px;
-      margin: 20px 0 10px;
+    .hero img {
+      max-width: 300px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
     }
     .price {
-      color: #a67c52;
+      color: #8c6e4d;
       font-size: 24px;
-      margin-bottom: 15px;
+      margin-top: 10px;
     }
-    .description {
-      font-size: 16px;
-      line-height: 1.8;
+    .features, .testimonials, .coming {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .features div, .trust div {
       margin-bottom: 20px;
     }
-    .button {
-      display: inline-block;
-      background-color: #000;
-      color: #fff;
+    .cta {
+      display: block;
+      margin: 30px auto;
       padding: 12px 24px;
+      background: black;
+      color: white;
       text-decoration: none;
-      border-radius: 6px;
-      font-size: 16px;
+      font-size: 18px;
+      border-radius: 8px;
     }
-    .button:hover {
-      background-color: #333;
+    .trust {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background: #fff;
+      padding: 20px;
+      margin: 40px 0;
+    }
+    footer {
+      background: #eee;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img class="product-image" src="admir-perfume.png" alt="عطر ADAMIR">
-    <h1>ADAMIR Eau de Parfum</h1>
-    <div class="price">399 ر.س</div>
-    <div class="description">
-      عطر فاخر يتميز بنفحات عليا من البرغموت والزعفران، تليها قلب زهري من الورد الدمشقي والياسمين، وتنتهي بقاعدة غنية من العود والعنبر وخشب الصندل.<br>
-      تركيبة راقية ومثالية لعشاق الفخامة، مصنوعة بعناية في المملكة العربية السعودية.
-    </div>
-    <a href="#" class="button">اطلب الآن</a>
-  </div>
+  <header>
+    <h1>ADAMIR - عطرنا، هويتنا</h1>
+    <p>صُنع في السعودية بروح الفخامة</p>
+  </header>
+
+  <section class="hero">
+    <img src="admire-perfume.png" alt="ADAMIR Perfume" />
+    <h2>ADAMIR Eau de Parfum</h2>
+    <p class="price">399 ر.س</p>
+    <p>عطر فاخر يتميز بنفحات عليا من البرغموت والزعفران، يليها قلب زهري من الورد الدمشقي والياسمين، وتنتهي بقاعدة غنية من العود والعنبر وخشب الصندل.</p>
+    <a href="https://wa.me/966xxxxxxxxx" class="cta">اطلب الآن عبر واتساب</a>
+  </section>
+
+  <section class="features">
+    <h3>لماذا تختار ADAMIR؟</h3>
+    <div>🌟 تركيبة ملكية بثبات طويل</div>
+    <div>🌿 مكونات طبيعية مختارة بعناية</div>
+    <div>🇸🇦 صناعة سعودية بكل فخر</div>
+  </section>
+
+  <section class="trust">
+    <div>🚚 شحن سريع</div>
+    <div>🔒 دفع آمن</div>
+    <div>💬 دعم فني مباشر</div>
+    <div>🔁 ضمان استرجاع خلال 7 أيام</div>
+  </section>
+
+  <section class="testimonials">
+    <h3>قالوا عنا</h3>
+    <p>"رائحة فخمة، كل من شمني سألني عن العطر!" - عميل من الرياض</p>
+    <p>"أفضل هدية قدمتها لنفسي" - عميلة من جدة</p>
+  </section>
+
+  <section class="coming">
+    <h3>قريبًا</h3>
+    <p>✨ عطر خاص للسهرات</p>
+    <p>🚗 نسخة سيارة فاخرة</p>
+    <p>💰 نسخة اقتصادية</p>
+  </section>
+
+  <footer>
+    &copy; 2025 جميع الحقوق محفوظة لـ ADAMIR
+  </footer>
 </body>
 </html>
